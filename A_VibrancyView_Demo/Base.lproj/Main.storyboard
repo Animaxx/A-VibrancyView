@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="A_VibrancyView_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroup" translatesAutoresizingMaskIntoConstraints="NO" id="9gx-Rl-ffR">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hlS-I4-kTf" customClass="A_VibrancyView" customModule="A_VibrancyView_Demo" customModuleProvider="target">
+                                <rect key="frame" x="200" y="80" width="200" height="140"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xv9-YT-KB5">
+                                        <rect key="frame" x="78" y="61" width="44.5" height="18"/>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="16"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="OnW-7L-1kJ"/>
+                                    <constraint firstItem="Xv9-YT-KB5" firstAttribute="centerX" secondItem="hlS-I4-kTf" secondAttribute="centerX" id="Vbj-Ia-Cg3"/>
+                                    <constraint firstItem="Xv9-YT-KB5" firstAttribute="centerY" secondItem="hlS-I4-kTf" secondAttribute="centerY" id="gIn-me-Bdy"/>
+                                    <constraint firstAttribute="width" constant="200" id="rp1-P3-vqn"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="786-gA-Aba">
+                                <rect key="frame" x="8" y="564" width="60" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="rfD-Y1-JwX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Convert">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickSubviewConvert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="exA-oZ-fLQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hlS-I4-kTf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="0ul-gW-ncd"/>
+                            <constraint firstItem="786-gA-Aba" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="8E4-hT-reT"/>
+                            <constraint firstItem="9gx-Rl-ffR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="H97-8w-Ecf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9gx-Rl-ffR" secondAttribute="bottom" id="JsU-9s-nbz"/>
+                            <constraint firstItem="9gx-Rl-ffR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Sbs-eM-g6c"/>
+                            <constraint firstAttribute="trailing" secondItem="9gx-Rl-ffR" secondAttribute="trailing" id="Uc3-BN-n1Q"/>
+                            <constraint firstItem="hlS-I4-kTf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="i8Y-lt-fxJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="786-gA-Aba" secondAttribute="bottom" constant="8" id="s9Y-fp-f2K"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="vibrancyView" destination="hlS-I4-kTf" id="ZTm-pF-55f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="74" y="101"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backgroup" width="640" height="960"/>
+    </resources>
+</document>
