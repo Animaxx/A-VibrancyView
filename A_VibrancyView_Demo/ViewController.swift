@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var vibrancyView: A_VibrancyView!
+    @IBOutlet weak var blurRadiusSlider: UISlider!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +19,9 @@ class ViewController: UIViewController {
 
     @IBAction func onClickSubviewConvert(sender: AnyObject) {
         self.vibrancyView.convertAllSubview()
+    }
+    @IBAction func onChangeBlurRadius(sender: UISlider) {
+        self.vibrancyView.blurRadius = CGFloat(sender.value)
     }
 }
 

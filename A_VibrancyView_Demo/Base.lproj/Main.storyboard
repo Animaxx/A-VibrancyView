@@ -21,36 +21,52 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hlS-I4-kTf" customClass="A_VibrancyView" customModule="A_VibrancyView_Demo" customModuleProvider="target">
-                                <rect key="frame" x="200" y="80" width="200" height="140"/>
+                                <rect key="frame" x="140" y="80" width="320" height="200"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xv9-YT-KB5">
-                                        <rect key="frame" x="78" y="61" width="44.5" height="18"/>
+                                        <rect key="frame" x="138.5" y="50" width="44.5" height="18"/>
                                         <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="16"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZZ-Uf-emq">
+                                        <rect key="frame" x="-140" y="-80" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="140" id="OnW-7L-1kJ"/>
+                                    <constraint firstAttribute="height" constant="200" id="OnW-7L-1kJ"/>
+                                    <constraint firstItem="Xv9-YT-KB5" firstAttribute="top" secondItem="hlS-I4-kTf" secondAttribute="top" constant="50" id="Qqd-7h-z6t"/>
                                     <constraint firstItem="Xv9-YT-KB5" firstAttribute="centerX" secondItem="hlS-I4-kTf" secondAttribute="centerX" id="Vbj-Ia-Cg3"/>
-                                    <constraint firstItem="Xv9-YT-KB5" firstAttribute="centerY" secondItem="hlS-I4-kTf" secondAttribute="centerY" id="gIn-me-Bdy"/>
-                                    <constraint firstAttribute="width" constant="200" id="rp1-P3-vqn"/>
+                                    <constraint firstAttribute="width" constant="320" id="rp1-P3-vqn"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="786-gA-Aba">
-                                <rect key="frame" x="8" y="564" width="60" height="28"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="rfD-Y1-JwX"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <state key="normal" title="Convert">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="786-gA-Aba">
+                                <rect key="frame" x="8" y="565" width="207" height="27"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                                <state key="normal" title="Convert all subview to transparence">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="onClickSubviewConvert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="exA-oZ-fLQ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Effect alpha:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geO-qb-Ohy">
+                                <rect key="frame" x="8" y="547.5" width="77.5" height="15.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="42T-HD-vsY">
+                                <rect key="frame" x="91" y="540.5" width="204" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="yBk-tP-r5o"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="onChangeBlurRadius:" destination="BYZ-38-t0r" eventType="valueChanged" id="i52-sc-0iX"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -58,13 +74,18 @@
                             <constraint firstItem="786-gA-Aba" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="8E4-hT-reT"/>
                             <constraint firstItem="9gx-Rl-ffR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="H97-8w-Ecf"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9gx-Rl-ffR" secondAttribute="bottom" id="JsU-9s-nbz"/>
+                            <constraint firstItem="42T-HD-vsY" firstAttribute="leading" secondItem="geO-qb-Ohy" secondAttribute="trailing" constant="7.5" id="L1y-vF-UHd"/>
+                            <constraint firstItem="geO-qb-Ohy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="Lvy-Xl-oss"/>
+                            <constraint firstItem="42T-HD-vsY" firstAttribute="centerY" secondItem="geO-qb-Ohy" secondAttribute="centerY" id="RXM-Bl-jOK"/>
                             <constraint firstItem="9gx-Rl-ffR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Sbs-eM-g6c"/>
                             <constraint firstAttribute="trailing" secondItem="9gx-Rl-ffR" secondAttribute="trailing" id="Uc3-BN-n1Q"/>
+                            <constraint firstItem="786-gA-Aba" firstAttribute="top" secondItem="geO-qb-Ohy" secondAttribute="bottom" constant="2" id="Un7-gZ-17l"/>
                             <constraint firstItem="hlS-I4-kTf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="i8Y-lt-fxJ"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="786-gA-Aba" secondAttribute="bottom" constant="8" id="s9Y-fp-f2K"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="blurRadiusSlider" destination="42T-HD-vsY" id="ALB-Xz-cpC"/>
                         <outlet property="vibrancyView" destination="hlS-I4-kTf" id="ZTm-pF-55f"/>
                     </connections>
                 </viewController>

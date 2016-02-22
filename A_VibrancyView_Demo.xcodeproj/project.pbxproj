@@ -40,6 +40,7 @@
 		6902641C1C78301A0016D32A = {
 			isa = PBXGroup;
 			children = (
+				690264601C7B616B0016D32A /* A_AdvancedVibrancyView */,
 				6902643A1C7830380016D32A /* A_VibrancyView */,
 				690264271C78301A0016D32A /* A_VibrancyView_Demo */,
 				690264261C78301A0016D32A /* Products */,
@@ -73,6 +74,13 @@
 				6902643B1C7830700016D32A /* A_VibrancyView.swift */,
 			);
 			name = A_VibrancyView;
+			sourceTree = "<group>";
+		};
+		690264601C7B616B0016D32A /* A_AdvancedVibrancyView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = A_AdvancedVibrancyView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
