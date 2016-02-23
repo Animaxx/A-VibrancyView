@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class VibranctDemo: UIViewController {
     
     @IBOutlet weak var vibrancyView: A_VibrancyView!
     @IBOutlet weak var blurRadiusSlider: UISlider!
@@ -20,8 +20,8 @@ class ViewController: UIViewController {
     @IBAction func onClickSubviewConvert(sender: AnyObject) {
         self.vibrancyView.convertAllSubview()
     }
-    @IBAction func onChangeBlurRadius(sender: UISlider) {
-        self.vibrancyView.blurRadius = CGFloat(sender.value)
+    @IBAction func onChangeEffectAlpha(sender: UISlider) {
+        self.vibrancyView.alphaOfEffect = CGFloat(sender.value)
     }
 }
 

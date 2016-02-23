@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		690264291C78301A0016D32A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690264281C78301A0016D32A /* AppDelegate.swift */; };
-		6902642B1C78301A0016D32A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6902642A1C78301A0016D32A /* ViewController.swift */; };
+		6902642B1C78301A0016D32A /* VibranctDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6902642A1C78301A0016D32A /* VibranctDemo.swift */; };
 		6902642E1C78301A0016D32A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6902642C1C78301A0016D32A /* Main.storyboard */; };
 		690264301C78301A0016D32A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6902642F1C78301A0016D32A /* Assets.xcassets */; };
 		690264331C78301A0016D32A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 690264311C78301A0016D32A /* LaunchScreen.storyboard */; };
 		6902643C1C7830700016D32A /* A_VibrancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6902643B1C7830700016D32A /* A_VibrancyView.swift */; };
+		690264671C7B87350016D32A /* A_AdvancedVibrancyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 690264661C7B87350016D32A /* A_AdvancedVibrancyView.m */; };
+		690264691C7B9F9A0016D32A /* AdcancedVibrancyDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690264681C7B9F9A0016D32A /* AdcancedVibrancyDemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		690264251C78301A0016D32A /* A_VibrancyView_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = A_VibrancyView_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		690264281C78301A0016D32A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6902642A1C78301A0016D32A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6902642A1C78301A0016D32A /* VibranctDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibranctDemo.swift; sourceTree = "<group>"; };
 		6902642D1C78301A0016D32A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6902642F1C78301A0016D32A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		690264321C78301A0016D32A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		690264341C78301A0016D32A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6902643B1C7830700016D32A /* A_VibrancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = A_VibrancyView.swift; path = A_VibrancyView/A_VibrancyView.swift; sourceTree = "<group>"; };
+		690264621C7B67280016D32A /* A_VibrancyView_Demo_bridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = A_VibrancyView_Demo_bridging.h; sourceTree = "<group>"; };
+		690264651C7B87350016D32A /* A_AdvancedVibrancyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = A_AdvancedVibrancyView.h; path = A_AdvancedVibrancyView/A_AdvancedVibrancyView.h; sourceTree = "<group>"; };
+		690264661C7B87350016D32A /* A_AdvancedVibrancyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = A_AdvancedVibrancyView.m; path = A_AdvancedVibrancyView/A_AdvancedVibrancyView.m; sourceTree = "<group>"; };
+		690264681C7B9F9A0016D32A /* AdcancedVibrancyDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdcancedVibrancyDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +64,10 @@
 		690264271C78301A0016D32A /* A_VibrancyView_Demo */ = {
 			isa = PBXGroup;
 			children = (
+				690264621C7B67280016D32A /* A_VibrancyView_Demo_bridging.h */,
 				690264281C78301A0016D32A /* AppDelegate.swift */,
-				6902642A1C78301A0016D32A /* ViewController.swift */,
+				6902642A1C78301A0016D32A /* VibranctDemo.swift */,
+				690264681C7B9F9A0016D32A /* AdcancedVibrancyDemo.swift */,
 				6902642C1C78301A0016D32A /* Main.storyboard */,
 				6902642F1C78301A0016D32A /* Assets.xcassets */,
 				690264311C78301A0016D32A /* LaunchScreen.storyboard */,
@@ -79,6 +87,8 @@
 		690264601C7B616B0016D32A /* A_AdvancedVibrancyView */ = {
 			isa = PBXGroup;
 			children = (
+				690264651C7B87350016D32A /* A_AdvancedVibrancyView.h */,
+				690264661C7B87350016D32A /* A_AdvancedVibrancyView.m */,
 			);
 			name = A_AdvancedVibrancyView;
 			sourceTree = "<group>";
@@ -155,8 +165,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6902642B1C78301A0016D32A /* ViewController.swift in Sources */,
+				6902642B1C78301A0016D32A /* VibranctDemo.swift in Sources */,
 				690264291C78301A0016D32A /* AppDelegate.swift in Sources */,
+				690264691C7B9F9A0016D32A /* AdcancedVibrancyDemo.swift in Sources */,
+				690264671C7B87350016D32A /* A_AdvancedVibrancyView.m in Sources */,
 				6902643C1C7830700016D32A /* A_VibrancyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +284,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "animax.A-VibrancyView-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = A_VibrancyView_Demo/A_VibrancyView_Demo_bridging.h;
 			};
 			name = Debug;
 		};
@@ -283,6 +296,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "animax.A-VibrancyView-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = A_VibrancyView_Demo/A_VibrancyView_Demo_bridging.h;
 			};
 			name = Release;
 		};
