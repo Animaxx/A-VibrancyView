@@ -18,27 +18,39 @@ class A_VibrancyView: UIView {
         self.backgroundColor = UIColor.clearColor()
     }
     
-    override func drawRect(rect: CGRect) {
-        super.drawRect(rect);
+    override func willMoveToSuperview(newSuperview: UIView?) {
+        super.willMoveToSuperview(newSuperview)
         
-        self.presentEffectView()
+        self.attachEffectView()
     }
     
-    func presentEffectView(style:UIBlurEffectStyle = .Light) {
-        if self.blurEffect != nil && self.effectView != nil {
-            return
-        }
-        
+    func presentEffect(style:UIBlurEffectStyle = .Light, animationDuration:Double = 0.5 ) {
         self.blurEffect = UIBlurEffect(style: style)
         
-        self.effectView = UIVisualEffectView(effect: self.blurEffect)
+        let block = { () -> Void in
+            self.effectView?.effect = self.blurEffect
+            let vibrancy = UIVibrancyEffect(forBlurEffect: self.blurEffect!)
+            self.vibrancyView?.effect = vibrancy
+        }
+
+        if (animationDuration > 0.0) {
+            UIView.animateWithDuration(animationDuration, animations: block)
+        } else {
+            block()
+        }
+    }
+    
+    func attachEffectView() {
+        if self.vibrancyView != nil && self.effectView != nil {
+            return
+        }
+        self.effectView = UIVisualEffectView()
         
         if let effectview = self.effectView {
             self.insertSubview(effectview, atIndex: 0)
             self.autoFullsize(effectview)
             
-            let vibrancy = UIVibrancyEffect(forBlurEffect: blurEffect!)
-            self.vibrancyView = UIVisualEffectView(effect: vibrancy)
+            self.vibrancyView = UIVisualEffectView()
             effectview.contentView.addSubview(self.vibrancyView!)
             self.autoFullsize(self.vibrancyView!)
         }

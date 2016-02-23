@@ -61,6 +61,7 @@
 }
 - (void)presentEffectView: (UIBlurEffectStyle)style {
     _blurEffect = (_customBlurEffect*)[_customBlurEffect effectWithStyle:style];
+//    _blurEffect = [[_customBlurEffect alloc] init];
     _effectView = [[UIVisualEffectView alloc] initWithEffect:_blurEffect];
     
     [self insertSubview:_effectView atIndex:0];
@@ -111,3 +112,63 @@
 }
 
 @end
+
+
+
+////
+//@property (nonatomic) BOOL appliesTintAndBlurSettings;
+//@property (nonatomic) _UIBackdropView *backdrop;
+//@property (getter=isBackdropVisible, nonatomic) BOOL backdropVisible;
+//@property (nonatomic) int blurHardEdges;
+//@property (nonatomic, copy) NSString *blurQuality;
+//@property (nonatomic) float blurRadius;
+//@property (nonatomic) BOOL blursWithHardEdges;
+//@property (nonatomic) float colorBurnTintAlpha;
+//@property (nonatomic) float colorBurnTintLevel;
+//@property (nonatomic, retain) UIImage *colorBurnTintMaskImage;
+//@property (nonatomic) float colorOffsetAlpha;
+//@property (nonatomic, retain) NSValue *colorOffsetMatrix;
+//@property (nonatomic, retain) _UIBackdropColorSettings *colorSettings;
+//@property (nonatomic, retain) UIColor *colorTint;
+//@property (nonatomic) float colorTintAlpha;
+//@property (nonatomic) float colorTintMaskAlpha;
+//@property (nonatomic, retain) UIImage *colorTintMaskImage;
+//@property (nonatomic, readonly) UIColor *combinedTintColor;
+//@property (nonatomic) BOOL darkenWithSourceOver;
+//@property (nonatomic) float darkeningTintAlpha;
+//@property (nonatomic) float darkeningTintBrightness;
+//@property (nonatomic) float darkeningTintHue;
+//@property (nonatomic, retain) UIImage *darkeningTintMaskImage;
+//@property (nonatomic) float darkeningTintSaturation;
+//@property (setter=setDesignMode:, nonatomic) BOOL designMode;
+//@property (getter=isEnabled, nonatomic) BOOL enabled;
+//@property (nonatomic) BOOL explicitlySetGraphicsQuality;
+//@property (nonatomic) float filterMaskAlpha;
+//@property (nonatomic, retain) UIImage *filterMaskImage;
+//@property (nonatomic) int graphicsQuality;
+//@property (nonatomic) float grayscaleTintAlpha;
+//@property (nonatomic) float grayscaleTintLevel;
+//@property (nonatomic) float grayscaleTintMaskAlpha;
+//@property (nonatomic, retain) UIImage *grayscaleTintMaskImage;
+//@property (getter=isHighlighted, nonatomic) BOOL highlighted;
+//@property (nonatomic, retain) UIColor *legibleColor;
+//@property (nonatomic) BOOL lightenGrayscaleWithSourceOver;
+//@property (nonatomic) int renderingHint;
+//@property (nonatomic) BOOL requiresColorStatistics;
+//@property (nonatomic) float saturationDeltaFactor;
+//@property (nonatomic) float scale;
+//@property (getter=isSelected, nonatomic) BOOL selected;
+//@property (nonatomic) int stackingLevel;
+//@property (nonatomic) double statisticsInterval;
+//@property (nonatomic, readonly) int style;
+//@property (nonatomic) int suppressSettingsDidChange;
+//@property (nonatomic) BOOL usesBackdropEffectView;
+//@property (nonatomic) BOOL usesColorBurnTintView;
+//@property (nonatomic) BOOL usesColorOffset;
+//@property (nonatomic) BOOL usesColorTintView;
+//@property (nonatomic) BOOL usesContentView;
+//@property (nonatomic) BOOL usesDarkeningTintView;
+//@property (nonatomic) BOOL usesGrayscaleTintView;
+//@property (nonatomic) unsigned int version;
+//@property (nonatomic) float zoom;
+//@property (nonatomic) BOOL zoomsBack;

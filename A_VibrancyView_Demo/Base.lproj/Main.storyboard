@@ -80,6 +80,16 @@
                                     <segue destination="1a9-vu-ldG" kind="presentation" id="cY2-oF-zax"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BNF-1y-Vhu">
+                                <rect key="frame" x="8" y="512" width="106" height="27"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                                <state key="normal" title="Present blur effect">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickBlurEffect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JWp-Cf-Hht"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -95,6 +105,8 @@
                             <constraint firstItem="9gx-Rl-ffR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Sbs-eM-g6c"/>
                             <constraint firstAttribute="trailing" secondItem="9gx-Rl-ffR" secondAttribute="trailing" id="Uc3-BN-n1Q"/>
                             <constraint firstItem="786-gA-Aba" firstAttribute="top" secondItem="geO-qb-Ohy" secondAttribute="bottom" constant="2" id="Un7-gZ-17l"/>
+                            <constraint firstItem="BNF-1y-Vhu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="YIF-Rw-Xgo"/>
+                            <constraint firstItem="42T-HD-vsY" firstAttribute="top" secondItem="BNF-1y-Vhu" secondAttribute="bottom" constant="1" id="hJE-OJ-ZEC"/>
                             <constraint firstItem="hlS-I4-kTf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="i8Y-lt-fxJ"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="786-gA-Aba" secondAttribute="bottom" constant="8" id="s9Y-fp-f2K"/>
                         </constraints>

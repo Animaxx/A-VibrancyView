@@ -17,6 +17,9 @@ class VibranctDemo: UIViewController {
         super.viewDidLoad()
     }
 
+    @IBAction func onClickBlurEffect(sender: AnyObject) {
+        self.vibrancyView.presentEffect()
+    }
     @IBAction func onClickSubviewConvert(sender: AnyObject) {
         self.vibrancyView.convertAllSubview()
     }
