@@ -20,28 +20,60 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroup" translatesAutoresizingMaskIntoConstraints="NO" id="9gx-Rl-ffR">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIh-zM-S5J">
+                                <rect key="frame" x="269" y="512" width="122" height="27"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                                <state key="normal" title="Extra-light blur effect">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickExtraLightBlurEffect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uCI-B6-l1F"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="|" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jqm-Wc-dCV">
+                                <rect key="frame" x="258" y="518" width="3" height="15.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSz-an-xy2">
+                                <rect key="frame" x="161" y="512" width="89" height="27"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                                <state key="normal" title="Dark blur effect">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickDarkBlurEffect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gTJ-gJ-1yA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="|" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfv-Vs-bpE">
+                                <rect key="frame" x="150" y="517" width="3" height="15.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hlS-I4-kTf" customClass="A_VibrancyView" customModule="A_VibrancyView_Demo" customModuleProvider="target">
-                                <rect key="frame" x="140" y="80" width="320" height="200"/>
+                                <rect key="frame" x="185" y="80" width="230" height="150"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xv9-YT-KB5">
-                                        <rect key="frame" x="138" y="50" width="44.5" height="18"/>
+                                        <rect key="frame" x="93" y="30" width="44.5" height="18"/>
                                         <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="16"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZZ-Uf-emq">
-                                        <rect key="frame" x="137" y="85" width="46" height="30"/>
-                                        <state key="normal" title="Button"/>
+                                        <rect key="frame" x="94.5" y="60" width="41" height="30"/>
+                                        <state key="normal" title="World"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="xZZ-Uf-emq" firstAttribute="centerY" secondItem="hlS-I4-kTf" secondAttribute="centerY" id="B2W-zp-JIF"/>
                                     <constraint firstItem="xZZ-Uf-emq" firstAttribute="centerX" secondItem="hlS-I4-kTf" secondAttribute="centerX" id="FuC-93-3pu"/>
-                                    <constraint firstAttribute="height" constant="200" id="OnW-7L-1kJ"/>
-                                    <constraint firstItem="Xv9-YT-KB5" firstAttribute="top" secondItem="hlS-I4-kTf" secondAttribute="top" constant="50" id="Qqd-7h-z6t"/>
+                                    <constraint firstAttribute="height" constant="150" id="OnW-7L-1kJ"/>
+                                    <constraint firstItem="Xv9-YT-KB5" firstAttribute="top" secondItem="hlS-I4-kTf" secondAttribute="top" constant="30" id="Qqd-7h-z6t"/>
                                     <constraint firstItem="Xv9-YT-KB5" firstAttribute="centerX" secondItem="hlS-I4-kTf" secondAttribute="centerX" id="Vbj-Ia-Cg3"/>
-                                    <constraint firstAttribute="width" constant="320" id="rp1-P3-vqn"/>
+                                    <constraint firstAttribute="width" constant="230" id="rp1-P3-vqn"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="786-gA-Aba">
@@ -81,21 +113,43 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BNF-1y-Vhu">
-                                <rect key="frame" x="8" y="512" width="106" height="27"/>
+                                <rect key="frame" x="8" y="512" width="134" height="27"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
-                                <state key="normal" title="Present blur effect">
+                                <state key="normal" title="Present light blur effect">
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="onClickBlurEffect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JWp-Cf-Hht"/>
+                                    <action selector="onClickLightBlurEffect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cid-LF-ycw"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1v-D1-MUT">
+                                <rect key="frame" x="234" y="565" width="174" height="27"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                                <state key="normal" title="Recover transparent subviews">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickRecover:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oem-AN-Xv5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="|" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w1V-At-h9C">
+                                <rect key="frame" x="223" y="570" width="3" height="15.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="hlS-I4-kTf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="0ul-gW-ncd"/>
+                            <constraint firstItem="w1V-At-h9C" firstAttribute="centerY" secondItem="786-gA-Aba" secondAttribute="centerY" id="23e-CD-NL0"/>
+                            <constraint firstItem="w1V-At-h9C" firstAttribute="leading" secondItem="786-gA-Aba" secondAttribute="trailing" constant="8" id="3EV-8V-S94"/>
+                            <constraint firstItem="zIh-zM-S5J" firstAttribute="leading" secondItem="Jqm-Wc-dCV" secondAttribute="trailing" constant="8" id="3bB-Qv-Cge"/>
+                            <constraint firstItem="OSz-an-xy2" firstAttribute="leading" secondItem="kfv-Vs-bpE" secondAttribute="trailing" constant="8" id="5ZL-kg-6nT"/>
                             <constraint firstItem="786-gA-Aba" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="8E4-hT-reT"/>
                             <constraint firstItem="F60-lh-z26" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="8" id="8IM-6G-lWF"/>
+                            <constraint firstItem="kfv-Vs-bpE" firstAttribute="centerY" secondItem="BNF-1y-Vhu" secondAttribute="centerY" id="GEa-Fc-siA"/>
+                            <constraint firstItem="Z1v-D1-MUT" firstAttribute="centerY" secondItem="w1V-At-h9C" secondAttribute="centerY" id="H0m-bP-Ugi"/>
                             <constraint firstItem="9gx-Rl-ffR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="H97-8w-Ecf"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9gx-Rl-ffR" secondAttribute="bottom" id="JsU-9s-nbz"/>
                             <constraint firstItem="42T-HD-vsY" firstAttribute="leading" secondItem="geO-qb-Ohy" secondAttribute="trailing" constant="7.5" id="L1y-vF-UHd"/>
@@ -103,11 +157,17 @@
                             <constraint firstAttribute="trailing" secondItem="F60-lh-z26" secondAttribute="trailing" constant="8" id="Pga-GW-7vR"/>
                             <constraint firstItem="42T-HD-vsY" firstAttribute="centerY" secondItem="geO-qb-Ohy" secondAttribute="centerY" id="RXM-Bl-jOK"/>
                             <constraint firstItem="9gx-Rl-ffR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Sbs-eM-g6c"/>
+                            <constraint firstItem="zIh-zM-S5J" firstAttribute="centerY" secondItem="Jqm-Wc-dCV" secondAttribute="centerY" id="Suz-Cy-Zn2"/>
                             <constraint firstAttribute="trailing" secondItem="9gx-Rl-ffR" secondAttribute="trailing" id="Uc3-BN-n1Q"/>
+                            <constraint firstItem="OSz-an-xy2" firstAttribute="centerY" secondItem="kfv-Vs-bpE" secondAttribute="centerY" id="UdR-om-l0U"/>
                             <constraint firstItem="786-gA-Aba" firstAttribute="top" secondItem="geO-qb-Ohy" secondAttribute="bottom" constant="2" id="Un7-gZ-17l"/>
+                            <constraint firstItem="Jqm-Wc-dCV" firstAttribute="centerY" secondItem="OSz-an-xy2" secondAttribute="centerY" id="We5-d2-vNY"/>
+                            <constraint firstItem="kfv-Vs-bpE" firstAttribute="leading" secondItem="BNF-1y-Vhu" secondAttribute="trailing" constant="8" id="Wen-om-yB7"/>
                             <constraint firstItem="BNF-1y-Vhu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="YIF-Rw-Xgo"/>
+                            <constraint firstItem="Jqm-Wc-dCV" firstAttribute="leading" secondItem="OSz-an-xy2" secondAttribute="trailing" constant="8" id="fJ0-Vz-u2v"/>
                             <constraint firstItem="42T-HD-vsY" firstAttribute="top" secondItem="BNF-1y-Vhu" secondAttribute="bottom" constant="1" id="hJE-OJ-ZEC"/>
                             <constraint firstItem="hlS-I4-kTf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="i8Y-lt-fxJ"/>
+                            <constraint firstItem="Z1v-D1-MUT" firstAttribute="leading" secondItem="w1V-At-h9C" secondAttribute="trailing" constant="8" id="kyN-FP-ybe"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="786-gA-Aba" secondAttribute="bottom" constant="8" id="s9Y-fp-f2K"/>
                         </constraints>
                     </view>

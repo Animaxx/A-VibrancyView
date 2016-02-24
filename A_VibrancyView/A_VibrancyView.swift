@@ -67,6 +67,13 @@ class A_VibrancyView: UIView {
             }
         }
     }
+    func recoverAllSubview() {
+        if let transparencyView = self.vibrancyView {
+            for item in transparencyView.contentView.subviews {
+                self.addSubview(item);
+            }
+        }
+    }
     
     // MARK: Helping methods
     private func autoFullsize(subview:UIView) {

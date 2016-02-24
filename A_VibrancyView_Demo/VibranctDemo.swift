@@ -17,14 +17,28 @@ class VibranctDemo: UIViewController {
         super.viewDidLoad()
     }
 
-    @IBAction func onClickBlurEffect(sender: AnyObject) {
+    @IBAction func onClickLightBlurEffect(sender: AnyObject) {
         self.vibrancyView.presentEffect()
     }
-    @IBAction func onClickSubviewConvert(sender: AnyObject) {
-        self.vibrancyView.convertAllSubview()
+    @IBAction func onClickDarkBlurEffect(sender: AnyObject) {
+        self.vibrancyView.presentEffect(.Dark)
     }
+    @IBAction func onClickExtraLightBlurEffect(sender: AnyObject) {
+        self.vibrancyView.presentEffect(.ExtraLight)
+    }
+    
     @IBAction func onChangeEffectAlpha(sender: UISlider) {
         self.vibrancyView.alphaOfEffect = CGFloat(sender.value)
     }
+    
+    @IBAction func onClickSubviewConvert(sender: AnyObject) {
+        self.vibrancyView.convertAllSubview()
+    }
+    @IBAction func onClickRecover(sender: AnyObject) {
+        self.vibrancyView.recoverAllSubview()
+    }
+    
+    
+
 }
 
