@@ -40,7 +40,7 @@ class A_VibrancyView: UIView {
         }
     }
     
-    func attachEffectView() {
+    private func attachEffectView() {
         if self.vibrancyView != nil && self.effectView != nil {
             return
         }

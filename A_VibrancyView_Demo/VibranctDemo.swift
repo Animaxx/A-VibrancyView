@@ -21,7 +21,7 @@ class VibranctDemo: UIViewController {
         self.vibrancyView.presentEffect()
     }
     @IBAction func onClickDarkBlurEffect(sender: AnyObject) {
-        self.vibrancyView.presentEffect(.Dark)
+        self.vibrancyView.presentEffect(.Dark, animationDuration: 0)
     }
     @IBAction func onClickExtraLightBlurEffect(sender: AnyObject) {
         self.vibrancyView.presentEffect(.ExtraLight)
