@@ -10,10 +10,21 @@
 
 @interface A_AdvancedVibrancyView : UIView
 
-@property (nonatomic) IBInspectable NSInteger blurRadius;
+// Blur radius value region [0.0 - 35.0]
+@property (nonatomic) IBInspectable float blurRadius;
+@property (nonatomic, retain) IBInspectable UIColor *colorTint;
 
-- (void)presentEffectView;
-- (void)presentEffectView: (UIBlurEffectStyle)style;
+// Grayscale tint alpha value region [0.0 - 1.0]
+@property (nonatomic) IBInspectable float grayscaleTintAlpha;
+
+// Grayscale tint leavel value region [0.0 - 1.0]
+@property (nonatomic) IBInspectable float grayscaleTintLevel;
+
+- (void)presentEffect;
+- (void)presentEffect: (UIBlurEffectStyle)style;
+- (void)presentEffectWithoutAnimation: (UIBlurEffectStyle)style;
+- (void)presentEffect: (UIBlurEffectStyle)style animationDuration:(double)duration;
+
 - (void)convertAllSubview;
 
 @end
