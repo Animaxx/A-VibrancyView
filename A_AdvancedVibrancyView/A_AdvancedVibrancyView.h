@@ -17,7 +17,7 @@
 // Grayscale tint alpha value region [0.0 - 1.0]
 @property (nonatomic) IBInspectable float grayscaleTintAlpha;
 
-// Grayscale tint leavel value region [0.0 - 1.0]
+// Grayscale tint leavel value region [0.0 - 1.0]: 0.0 means black, 1.0 means white
 @property (nonatomic) IBInspectable float grayscaleTintLevel;
 
 - (void)presentEffect;
