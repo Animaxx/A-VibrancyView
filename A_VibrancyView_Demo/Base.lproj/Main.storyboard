@@ -340,7 +340,7 @@
                                 <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="30" minValue="1" maxValue="35" translatesAutoresizingMaskIntoConstraints="NO" id="YgT-gU-iqE">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="20" minValue="1" maxValue="30" translatesAutoresizingMaskIntoConstraints="NO" id="YgT-gU-iqE">
                                 <rect key="frame" x="90" y="432" width="204" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="kkF-7q-xGf"/>

@@ -10,7 +10,7 @@
 
 @interface A_AdvancedVibrancyView : UIView
 
-// Blur radius value region [0.0 - 35.0]
+// Blur radius value region [0.0 - 30.0]
 @property (nonatomic) IBInspectable float blurRadius;
 @property (nonatomic, retain) IBInspectable UIColor *colorTint;
 
